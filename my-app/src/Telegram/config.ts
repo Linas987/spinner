@@ -1,0 +1,1 @@
+export const telegram = (window as any).Telegram.WebApp;

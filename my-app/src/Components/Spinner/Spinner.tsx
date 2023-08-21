@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Spinner.css";
 import Button from "../Button/Button";
+import { telegram } from "../../Telegram/config";
 
 
 function Card() {

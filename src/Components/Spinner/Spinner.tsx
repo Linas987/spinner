@@ -1,12 +1,9 @@
-import React, { useState } from "react";
 import "./Spinner.css";
 import Button from "../Button/Button";
 import { telegram } from "../../Telegram/config";
 
 
 function Card() {
-  const [count, setCount] = useState(0);
-
   const handleSpin = () => {
     telegram.MainButton.text = "Pay :)";
     telegram.MainButton.show();

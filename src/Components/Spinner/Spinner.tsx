@@ -14,16 +14,13 @@ function Card() {
   const [mustSpin, setMustSpin] = useState(false);
   const [prizeNumber, setPrizeNumber] = useState(0);
   
-  const handleSpin = () => {
-    telegram.MainButton.text = "You spinned";
-    telegram.MainButton.show();
-  };
-
   const handleSpinClick = () => {
     if (!mustSpin) {
       const newPrizeNumber = Math.floor(Math.random() * data.length);
       setPrizeNumber(newPrizeNumber);
       setMustSpin(true);
+      telegram.MainButton.text = "You spinned";
+      telegram.MainButton.show();
     }
   }
 
